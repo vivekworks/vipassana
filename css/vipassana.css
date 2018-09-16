@@ -1,0 +1,232 @@
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Merriweather.woff2)  format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body{
+	font-family: 'Merriweather';
+}
+
+header{
+	padding:5px;
+
+}
+header a:link, header a:visited{
+	text-decoration: none;
+}
+header h1{
+	font-family: sans-serif;
+}
+
+header #left{
+	text-align: left;
+	font-size: 300%;
+}
+
+header #photoleft{
+	text-align: left;
+	font-size: 190%;
+}
+
+
+header #right{
+	text-align: right;
+	font-size: 190%;
+}
+
+
+footer div#copyrights{
+	font-size: 80%;
+	font-weight: bold;
+	line-height: 105%;
+	padding: 1px 0px 1px 0px;
+	text-align: center;
+	
+}
+#primarytable{
+	display: table;
+}
+#primaryrow{
+	display: table-row;
+}
+#mainsection, #aside{
+	display: table-cell;
+	vertical-align: top;
+}
+
+#aside{
+	padding:15px;
+	width: 350px;
+	border:thin solid;
+	border-right-color: #525252;
+	border-top-color: #CC0000;
+	border-left-color: #CC0000;
+	border-bottom-color: #525252;
+}
+#mainsection{
+	padding: 0px 10px 10px 5px;
+	
+}
+#mainsection p{
+	text-align: justify;
+}
+#dhammasetu{
+	text-align: center;
+}
+
+
+#dhammasetu p#large{
+	font-size: large;
+	font-weight: bold;
+}
+
+#dhammasetu p#normal{
+	font-size: medium;
+}
+span.color1{
+	color: #CC0000;
+}
+span.color2{
+	color: #525252;
+}
+#daylinksection{
+	display: table-cell;
+	
+	margin: 0px;
+	padding: 5px;
+	width: 100px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #525252;
+}
+#daydescriptionsection{
+	display: table-cell;	
+	padding: 10px;
+	background-color: #FEA71C;
+}
+
+#daylinksection ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+
+}
+#mainlinksection{
+	border-width: thin;
+	background-color: #525252;
+	
+}
+#mainlinksection ul{
+	margin: 0px;
+	
+}
+#mainlinksection ul li{
+	display: inline;
+}
+
+
+
+#daylinksection ul {
+	text-align: center;
+}
+
+#daylinksection a,#mainlinksection a{
+	text-decoration: none;
+}
+
+#daylinksection ul li a:link, #daylinksection ul li a:visited,#mainlinksection ul li a:link, #mainlinksection ul li a:visited{
+	color: white;
+}
+
+#daylinksection ul li.selected{
+	background-color: #CC0000;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 12px;
+}
+
+#mainlinksection ul li{
+	display: inline;
+	list-style-type: none;
+}
+
+#mainlinksection{
+	border-width: thin;
+	background-color: #525252;
+	margin: 0px;
+	padding: 0px;
+}
+
+#mainlinksection ul{
+	margin: 0px;
+}
+#mainlinksection ul li{
+	padding: 10px;
+	margin: 50px;
+}
+#mainlinksection ul li.selected{
+	background-color: #CC0000;
+	border-radius: 12px;
+}
+
+#vipassanaintro{
+	display: table-cell;
+	vertical-align: top;
+	padding-right: 10px;
+}
+
+#vipassanaintropic{
+	display: table-cell;
+	vertical-align: top;
+
+}
+
+#vipassanaintro ul{
+	list-style-image: none;
+}
+
+p a:link, p a:visited{
+	color: #CC0000;
+	text-decoration: none;
+}
+
+
+p a:hover{
+	color: #009DCB;
+	text-decoration: underline;
+}
+table{
+	border: thin solid;
+}
+tr{
+	border: thin solid;	
+}
+td,th{
+	border: thin solid;
+	text-align: left;
+	width: 200px;
+	padding-left: 5px;
+}
+th{
+	text-align: center;
+}
+#photosection{
+	padding: 20px 20px 20px 32px;
+	background-color: #FEA71C;
+}
+
+#photosection img{
+	border:thin solid;
+
+}
+
+#mainsection p img{
+	border:thin solid;
+}
+div#photopage{
+	background-color: #FEA71C;
+}
