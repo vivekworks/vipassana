@@ -15,27 +15,47 @@ header{
 	padding:5px;
 
 }
+header a{
+	-webkit-transition: .5s; 
+	transition: .5s;
+}
 header a:link, header a:visited{
 	text-decoration: none;
+	text-shadow: 5px 5px 10px black;	
+	
+}
+header a:hover{
+	font-size: 105%;
 }
 header h1{
 	font-family: sans-serif;
 }
 
+header div a span.color1{
+	text-shadow: 5px 5px 10px black, 1px 1px 2px #CC0000;		
+}
+
+header div a span.color2{
+	text-shadow: 5px 5px 10px black, 1px 1px 2px #525252;		
+}
+
 header #left{
 	text-align: left;
 	font-size: 300%;
+	
 }
 
 header #photoleft{
 	text-align: left;
 	font-size: 190%;
+
 }
 
 
 header #right{
 	text-align: right;
 	font-size: 190%;
+	text-shadow: 3px 3px 7px silver;
 }
 
 
@@ -61,7 +81,7 @@ footer div#copyrights{
 #aside{
 	padding:15px;
 	width: 350px;
-	border:thin solid;
+	border:thin inset;
 	border-right-color: #525252;
 	border-top-color: #CC0000;
 	border-left-color: #CC0000;
@@ -98,7 +118,7 @@ span.color2{
 	
 	margin: 0px;
 	padding: 5px;
-	width: 100px;
+	width: 125px;
 	text-align: left;
 	vertical-align: top;
 	background-color: #525252;
@@ -134,12 +154,25 @@ span.color2{
 	text-align: center;
 }
 
-#daylinksection a,#mainlinksection a{
+#daylinksection a{
 	text-decoration: none;
 }
 
+#mainlinksection a{
+	text-decoration: none;
+	transition: .5s;
+}
 #daylinksection ul li a:link, #daylinksection ul li a:visited,#mainlinksection ul li a:link, #mainlinksection ul li a:visited{
 	color: white;
+}
+
+#daylinksection .notselected{
+	transition: .5s;
+}
+
+#daylinksection .notselected:hover{
+	text-shadow: 5px 5px 4px  black;
+	font-size: 110%;
 }
 
 #daylinksection ul li.selected{
@@ -171,6 +204,12 @@ span.color2{
 #mainlinksection ul li.selected{
 	background-color: #CC0000;
 	border-radius: 12px;
+	text-shadow: 5px 5px 4px black;
+}
+
+#mainlinksection a:hover{
+	text-shadow: 5px 5px 4px  black;
+	font-size: 105%;
 }
 
 #vipassanaintro{
@@ -206,7 +245,7 @@ tr{
 	border: thin solid;	
 }
 td,th{
-	border: thin solid;
+	border: thin inset gray;
 	text-align: left;
 	width: 200px;
 	padding-left: 5px;
@@ -220,12 +259,21 @@ th{
 }
 
 #photosection img{
-	border:thin solid;
+	border:thin inset;
 
 }
 
+#photosection p a{
+	transition:.75s;
+}
+
+
+#photosection p a:hover{
+	box-shadow: 5px 5px 10px #525252;
+}
+
 #mainsection p img{
-	border:thin solid;
+	border:thin inset;
 }
 div#photopage{
 	background-color: #FEA71C;

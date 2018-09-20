@@ -12,27 +12,50 @@ body{
 }
 
 header{
-	text-align: left;
 	padding:5px;
 
 }
-
 header a{
+	-webkit-transition: .5s; 
+	transition: .5s;
+}
+header a:link, header a:visited{
 	text-decoration: none;
+	text-shadow: 5px 5px 10px black;	
+	
+}
+header a:hover{
+	font-size: 105%;
 }
 header h1{
 	font-family: sans-serif;
 }
 
+header div a span.color1{
+	text-shadow: 5px 5px 10px black, 1px 1px 2px #CC0000;		
+}
+
+header div a span.color2{
+	text-shadow: 5px 5px 10px black, 1px 1px 2px #525252;		
+}
 
 header #left{
 	text-align: left;
 	font-size: 300%;
+	
 }
+
+header #photoleft{
+	text-align: left;
+	font-size: 190%;
+
+}
+
 
 header #right{
 	text-align: right;
 	font-size: 190%;
+	text-shadow: 3px 3px 7px silver;
 }
 
 footer div#copyrights{
@@ -117,11 +140,24 @@ span.color2{
 #daylinksection ul li a:link, #daylinksection ul li a:visited,#mainlinksection ul li a:link, #mainlinksection ul li a:visited{
 	color: white;
 }
+
+#daylinksection .notselected{
+	transition: .5s;
+}
+
+#daylinksection .notselected:hover{
+	text-shadow: 5px 5px 4px  black;
+	font-size: 110%;
+}
+
+
 #daylinksection ul li.selected{
 	background-color: #CC0000;
 	padding: 10px;
 	margin: 10px;
 	border-radius: 12px;
+	text-shadow: 5px 5px 4px  black;
+	
 }
 
 #mainlinksection ul li{
@@ -131,6 +167,7 @@ span.color2{
 	margin: 50px;
 
 }
+
 
 #daydescriptionsection #narration{
 	display: table-cell;
@@ -158,7 +195,19 @@ span.color2{
 	padding: 10px;
 	margin: 50px;
 	border-radius: 12px;
+	text-shadow: 5px 5px 4px black;
 }
+
+#mainlinksection a{
+	text-decoration: none;
+	transition: .5s;
+}
+
+#mainlinksection a:hover{
+	text-shadow: 5px 5px 4px  black;
+	font-size: 105%;
+}
+
 
 #dhammasetu{
 	text-align: center;
@@ -181,7 +230,7 @@ tr{
 	border: thin solid;	
 }
 td,th{
-	border: thin solid;
+	border: thin inset gray;
 	text-align: left;
 	width: 200px;
 	padding-left: 5px;
