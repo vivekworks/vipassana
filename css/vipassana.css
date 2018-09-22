@@ -1,4 +1,3 @@
-/* latin */
 @font-face {
   font-family: 'Merriweather';
   font-style: normal;
@@ -27,8 +26,10 @@ header a:link, header a:visited{
 header a:hover{
 	font-size: 105%;
 }
-header h1{
-	font-family: sans-serif;
+
+header #left{
+	text-align: left;
+	font-size: 300%;	
 }
 
 header div a span.color1{
@@ -38,19 +39,6 @@ header div a span.color1{
 header div a span.color2{
 	text-shadow: 5px 5px 10px black, 1px 1px 2px #525252;		
 }
-
-header #left{
-	text-align: left;
-	font-size: 300%;
-	
-}
-
-header #photoleft{
-	text-align: left;
-	font-size: 190%;
-
-}
-
 
 header #right{
 	text-align: right;
@@ -65,57 +53,11 @@ footer div#copyrights{
 	line-height: 105%;
 	padding: 1px 0px 1px 0px;
 	text-align: center;
-	
-}
-#primarytable{
-	display: table;
-}
-#primaryrow{
-	display: table-row;
-}
-#mainsection, #aside{
-	display: table-cell;
-	vertical-align: top;
+
 }
 
-#aside{
-	padding:15px;
-	width: 350px;
-	border:thin inset;
-	border-right-color: #525252;
-	border-top-color: #CC0000;
-	border-left-color: #CC0000;
-	border-bottom-color: #525252;
-}
-#mainsection{
-	padding: 0px 10px 10px 5px;
-	
-}
-#mainsection p{
-	text-align: justify;
-}
-#dhammasetu{
-	text-align: center;
-}
-
-
-#dhammasetu p#large{
-	font-size: large;
-	font-weight: bold;
-}
-
-#dhammasetu p#normal{
-	font-size: medium;
-}
-span.color1{
-	color: #CC0000;
-}
-span.color2{
-	color: #525252;
-}
 #daylinksection{
 	display: table-cell;
-	
 	margin: 0px;
 	padding: 5px;
 	width: 125px;
@@ -123,11 +65,363 @@ span.color2{
 	vertical-align: top;
 	background-color: #525252;
 }
-#daydescriptionsection{
-	display: table-cell;	
-	padding: 10px;
+
+#photosection{
+	padding: 30px 20px 20px 20px;
 	background-color: #FEA71C;
 }
+
+
+@media screen and (max-device-width: 720px){
+
+	#headarticle{
+		font-size: 100%;
+	}
+
+
+	#mainsection{
+		padding: 0px 10px 10px 5px;
+		width: 100%;
+	}
+
+	#aside{
+		font-size: 100%;
+		margin-top: 20px;
+		padding:10px;
+		border:thin inset;
+		border-right-color: #525252;
+		border-top-color: #CC0000;
+		border-left-color: #CC0000;
+		border-bottom-color: #525252;
+		text-align: center;
+	}
+
+	#aside img#dhammasetupagoda{
+		width: 80%;
+	}
+
+	#aside img#dhammasetulocation{
+		width: 80%;
+	}
+
+	#aside table{
+		width: 80%;
+		font-size: 150%
+	}
+
+	#mainlinksection{
+		background-color: #525252;	
+		padding: 2px 0px 5px 0px;
+	}
+
+	#mainarticle{
+		font-size: 100%;
+		margin-top: 0px;
+	}
+
+
+	#mainlinksection ul li{
+		display: list-item;
+		list-style-type: none;
+		padding: 10px;
+		margin: 0px;
+	}
+
+	#mainlinksection ul li.selected{
+		background-color: #CC0000;
+		/*border: thin solid;*/
+		border-radius: 12px;
+		text-shadow: 5px 5px 4px black;
+		width: 38%;
+	}
+	#daylinksection{
+		display:none;
+	}
+
+	#daylinksectionsmall{
+		text-align: center;
+		color: white;
+		margin: 0px;
+		padding: 20px;
+		background-color: #525252;
+
+	}
+
+#daylinksectionsmall  a{
+		margin: 10% 0%;
+		padding: 5%;
+		font-size: 250%;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	#daylinksectionsmall a.selected{
+		padding: 2%;
+		background-color: #CC0000;
+		border-radius: 12px;
+		text-shadow: 5px 5px 4px black;
+	}
+	#photosection p a{
+		transition:.4s;
+	}
+
+
+	#photosection p a:hover{
+		box-shadow: 5px 5px 10px #525252;
+	}
+
+
+	#res_hd{
+		display: none;
+	}
+
+	#res_ld img{
+		width: 100%;
+		padding: 5px;
+	}
+
+	#mobiletedtalk{
+
+	}
+
+	#tablettedtalk{
+		display: none;
+	}
+
+	#pctedtalk{
+		display: none;
+	}
+
+}
+
+@media only screen and (min-device-width: 721px) and (max-device-width: 1280px){
+
+	#headarticle{
+		font-size: 90%;
+	}
+
+	#mainarticle{
+		font-size: 90%;	
+	}
+
+	#mainsection{
+		padding: 0px 10px 10px 5px;
+		width: 100%;
+	}
+
+	#aside{
+		margin-top: 20px;
+		font-size: 80%;
+		padding:10px;
+		border:thin inset;
+		border-right-color: #525252;
+		border-top-color: #CC0000;
+		border-left-color: #CC0000;
+		border-bottom-color: #525252;
+	}
+
+	#aside img#dhammasetupagoda{
+		width: 70%;
+	}
+
+	#aside img#dhammasetulocation{
+		width: 70%;
+	}
+
+	#aside table{
+		width: 80%;
+		font-size: 120%
+	}
+
+
+	#mainlinksection{
+		background-color: #525252;	
+		padding: 0px;
+		margin: 5px 0px 10px 0px;
+		font-size: 115%
+	}
+
+
+	#mainlinksection ul li{
+		display: inline;
+		list-style-type: none;
+		padding: 10px;
+		margin: 50px;
+	}
+
+	#mainlinksection ul li.selected{
+		background-color: #CC0000;
+		/*border: thin solid;*/
+		border-radius: 12px;
+		text-shadow: 5px 5px 4px black;		
+	}
+
+	#daylinksectionsmall{
+		display: none;
+	}
+
+	#photosection{
+		width:95.7%;
+	}
+
+	#photosection img{
+		width: 100%;
+	}
+
+	#photosection a{
+		transition:.4s;
+	}
+
+
+	#photosection p a:hover{
+		box-shadow: 5px 5px 10px #525252;
+	}
+
+	#res_hd img{
+		width: 48.5%;
+		padding: 5px;
+	}
+
+	#res_ld{
+		display: none;
+	}
+
+	#mobiletedtalk{
+		display: none;
+	}
+
+
+	#pctedtalk{
+		display: none;
+	}
+}
+
+
+
+@media only screen and (min-device-width: 1281px){
+
+	#headarticle{
+		font-size: 100%;
+	}
+
+	#mainsection{
+		vertical-align: top;
+		display: table-cell;
+		padding: 0px 10px 10px 5px;
+		
+	}
+
+	#aside{
+		
+		display: table-cell;
+		padding:10px 10px 0px 10px;
+		border:thin inset;
+		font-size: 95%;
+		border-right-color: #525252;
+		border-top-color: #CC0000;
+		border-left-color: #CC0000;
+		border-bottom-color: #525252;
+		
+	}
+
+	#mainlinksection{
+		background-color: #525252;	
+		padding: 0px;
+		margin: 5px 0px 10px 0px;
+		font-size: 105%
+	}
+
+
+	#mainlinksection ul li{
+		display: inline;
+		list-style-type: none;
+		padding: 10px;
+		margin: 50px;
+	}
+
+	#mainlinksection ul li.selected{
+		background-color: #CC0000;
+		/*border: thin solid;*/
+		border-radius: 12px;
+		text-shadow: 5px 5px 4px black;		
+	}
+
+	#daylinksectionsmall{
+		display: none;
+	}
+
+	#photosection img{
+		opacity: 1;
+		padding: 5px;
+	}
+
+
+	#photosection a:hover img{
+		opacity: .80;
+	}
+
+	#photosection a{
+		transition:.4s;
+	}
+
+
+	#photosection a:hover{
+		box-shadow: 2px 2px 2px #525252;
+	}
+
+	#res_hd img{
+		width: 32%;
+		height: 14em;
+	}
+
+	#res_ld{
+		display: none;
+	}
+
+	#mobiletedtalk{
+		display: none;
+	}
+
+	#tablettedtalk{
+		display: none;
+	}
+
+	#pctedtalk{
+		
+	}
+}
+
+#mainarticle{
+	display: table-cell;
+	vertical-align: top;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color: #FEA71C;
+}
+
+#mainsection p{
+	text-align: justify;
+}
+
+p.large{
+	font-size: 125%;
+	font-weight: bold;
+}
+
+p.normal{
+	font-size: 100%;
+}
+
+
+
+
+span.color1{
+	color: #CC0000;
+}
+span.color2{
+	color: #525252;
+}
+
 
 #daylinksection ul{
 	list-style-type: none;
@@ -135,20 +429,17 @@ span.color2{
 	padding: 0px;
 
 }
-#mainlinksection{
-	border-width: thin;
-	background-color: #525252;
-	
-}
-#mainlinksection ul{
-	margin: 0px;
-	
-}
-#mainlinksection ul li{
-	display: inline;
-}
 
 
+#mainlinksection a{
+	text-decoration: none;
+	transition: .5s;
+}
+
+#mainlinksection a:hover{
+	text-shadow: 5px 5px 4px  black;
+	font-size: 105%;
+}
 
 #daylinksection ul {
 	text-align: center;
@@ -158,11 +449,8 @@ span.color2{
 	text-decoration: none;
 }
 
-#mainlinksection a{
-	text-decoration: none;
-	transition: .5s;
-}
-#daylinksection ul li a:link, #daylinksection ul li a:visited,#mainlinksection ul li a:link, #mainlinksection ul li a:visited{
+
+#daylinksection ul li a:link, #daylinksection ul li a:visited,#mainlinksection ul li a:link, #mainlinksection ul li a:visited,#daylinksectionsmall a:link, #daylinksectionsmall a:visited{
 	color: white;
 }
 
@@ -170,63 +458,26 @@ span.color2{
 	transition: .5s;
 }
 
-#daylinksection .notselected:hover{
+#daylinksection .notselected:hover, #daylinksectionsmall .notselected:{
 	text-shadow: 5px 5px 4px  black;
 	font-size: 110%;
 }
 
 #daylinksection ul li.selected{
 	background-color: #CC0000;
-	padding: 10px;
-	margin: 10px;
+	padding: 6px;
+	margin: 10px 10px 0px 10px;
 	border-radius: 12px;
-}
-
-#mainlinksection ul li{
-	display: inline;
-	list-style-type: none;
-}
-
-#mainlinksection{
-	border-width: thin;
-	background-color: #525252;
-	margin: 0px;
-	padding: 0px;
-}
-
-#mainlinksection ul{
-	margin: 0px;
-}
-#mainlinksection ul li{
-	padding: 10px;
-	margin: 50px;
-}
-#mainlinksection ul li.selected{
-	background-color: #CC0000;
-	border-radius: 12px;
-	text-shadow: 5px 5px 4px black;
-}
-
-#mainlinksection a:hover{
-	text-shadow: 5px 5px 4px  black;
-	font-size: 105%;
-}
-
-#vipassanaintro{
-	display: table-cell;
-	vertical-align: top;
-	padding-right: 10px;
 }
 
 #vipassanaintropic{
-	display: table-cell;
+	vertical-align: top;
+	float: right;
+	padding: 15px;
 	vertical-align: top;
 
 }
 
-#vipassanaintro ul{
-	list-style-image: none;
-}
 
 p a:link, p a:visited{
 	color: #CC0000;
@@ -240,6 +491,7 @@ p a:hover{
 }
 table{
 	border: thin solid;
+	margin: 0px;
 }
 tr{
 	border: thin solid;	
@@ -253,27 +505,9 @@ td,th{
 th{
 	text-align: center;
 }
-#photosection{
-	padding: 20px 20px 20px 32px;
-	background-color: #FEA71C;
-}
-
-#photosection img{
-	border:thin inset;
-
-}
-
-#photosection p a{
-	transition:.75s;
-}
-
-
-#photosection p a:hover{
-	box-shadow: 5px 5px 10px #525252;
-}
 
 #mainsection p img{
-	border:thin inset;
+	border:thin none;
 }
 div#photopage{
 	background-color: #FEA71C;
